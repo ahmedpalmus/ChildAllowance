@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">ChildAllowance</string>
+
+    <string name="map_key" translatable="false">
+        AIzaSyDmFVuBPCTN6Ytyvbbr7Qfic0oaeodclFc
+    </string>
+    <string name="logo">First Aid Hero </string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="type">User Type</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="wait">Please Waite ...</string>
+    <string name="noResult">No Results</string>
+    <string name="connecting">Connecting ...</string>
+    <string name="enterDetail">Enter valid details</string>
+    <string name="enterREgistration">The username is already used</string>
+    <string name="enterUsername">Enter valid username</string>
+    <string name="enterPass">Enter valid password, more than 7 chars</string>
+    <string name="enterPass2">The passwords don\'t match</string>
+    <string name="enterEmail">Enter valid Email</string>
+    <string name="enterPhone">Enter valid Phone number, 10 digits</string>
+    <string name="enterJob">Enter valid Job</string>
+    <string name="enterAge">Enter valid Age</string>
+    <string name="enterCategory">select the correct category</string>
+    <string name="enterPersonal">Enter valid Personal name 3 to 30 letters</string>
+    <string name="enterAddress">Enter valid address</string>
+    <string name="success">Successful Operation</string>
+    <string name="try_again">Try Again</string>
+
+    <string name="loginError">Enter valid login information</string>
+    <string name="userExist">Wrong username or password</string>
+    <string name="pername">Full Name</string>
+    <string name="usertype">User Type</string>
+    <string name="detail">The details</string>
+    <string name="save">Save</string>
+    <string name="check">Check</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="logout">LogOut</string>
+
+
+    <string name="conform_pasword">Confirm Pasword</string>
+
+    <string name="add">Add</string>
+
+    <string name="attach_image">Attach Image</string>
+    <string name="the_image">The Image</string>
+
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+
+    <string name="state">State</string>
+    <string name="view_image">View Image</string>
+    <string name="delete">Delete</string>
+
+    <string name="update">Update</string>
+
+    <string name="job">Job</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+
+
+    <string-array name="rating" translatable="false">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="users" translatable="false">
+        <item>Volunteer</item>
+        <item>Admin</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="gender" translatable="false">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

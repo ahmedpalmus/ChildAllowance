@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ChildAllowance</string>
+
+    <string name="logo">First Aid Hero</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="register">تسجيل مستخدم جديد</string>
+    <string name="type">نوع المستخدم</string>
+    <string name="address">العنوان</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="cancel">إلغاء</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="detail">التفاصيل</string>
+    <string name="wait">الرجاء الانتظار...</string>
+    <string name="noResult">لا يوجد نتائج</string>
+    <string name="connecting">يتم الإن الاتصال...</string>
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="enterDetail">أدخل التفاصيل بشكل صحيح</string>
+    <string name="enterREgistration">الاسم مستخدم مسبقا</string>
+    <string name="enterAddress">ادخل العنوان بشكل صحيح</string>
+    <string name="enterJob">أدخل العمل بشكل صحيح</string>
+    <string name="enterAge">أدخل العمر بشكل صحيح</string>
+    <string name="enterUsername">أدخل اسم المستخدم بشكل صحيح</string>
+    <string name="enterPass">أدخل كلمة المرور بشكل صحيح</string>
+    <string name="enterPass2">كلمات المرور غير متطابقة</string>
+    <string name="enterEmail">ادخل بريد الكتروني بصيغة صحيحة</string>
+    <string name="enterPhone">ادخل رقم الجوال بطريقة صحيحة</string>
+    <string name="enterPersonal">أدخل  الاسم الشخصي بشكل صحيح</string>
+    <string name="success">تمت العملية بنجاح</string>
+    <string name="loginError">أدخل البيانات بشكل صحيح</string>
+    <string name="userExist">خطأ في كلمة المرور أو اسم المستخدم</string>
+    <string name="enterCategory">اختر مجال العمل المناسب</string>
+    <string name="pername">الاسم الشخصي</string>
+    <string name="usertype">نوع المستخدم</string>
+    <string name="save">حفظ</string>
+    <string name="check">تحقق</string>
+    <string name="chat">المحادثات</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="logout">خروج</string>
+
+
+    <string name="conform_pasword">Conform Pasword</string>
+
+    <string name="add">Add</string>
+
+    <string name="attach_image">Attach Image</string>
+    <string name="the_image">The Image</string>
+
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+
+    <string name="state">State</string>
+    <string name="view_image">View Image</string>
+    <string name="delete">Delete</string>
+
+    <string name="update">Update</string>
+
+    <string name="job">Job</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+
+</resources>

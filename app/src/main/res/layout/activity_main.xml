@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/logo"/>
+
+            <EditText
+                android:id="@+id/log_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/username"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:background="@drawable/empty_line"
+                android:layout_margin="10dp"
+                />
+
+            <EditText
+                android:id="@+id/log_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/password"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+                android:background="@drawable/empty_line"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:onClick="logClick"
+                android:id="@+id/log_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:padding="13dp"
+                android:background="@drawable/box_8"/>
+
+            <Button
+                android:onClick="logClick"
+                android:id="@+id/log_reg"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textAllCaps="false"
+                android:textColor="#03426B"
+                android:textSize="20sp"
+                android:padding="13dp"
+                android:background="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParentPage"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:padding="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:textSize="22dp"
+            app:drawableLeftCompat="@drawable/minilogo"
+            android:textColor="#018191"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/agencyb"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/my_memo"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:fontFamily="@font/masque"
+                android:text="My Children"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/gradient_move"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/children"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+            </LinearLayout>
+                       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+                <Button
+                    android:id="@+id/search"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Search"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/masque"
+                    android:textColor="#fff"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/box_8"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+                <Button
+                    android:id="@+id/profile"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="5dp"                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Profile"
+                    android:fontFamily="@font/masque"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/profile"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/gradient_move"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+                <Button
+                    android:id="@+id/supp"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="5dp"                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Support"
+                    android:fontFamily="@font/masque"
+                    android:drawableLeft="@drawable/support"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/gradient_move"
+                    android:textAlignment="center"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -41,13 +41,13 @@ import java.util.HashMap;
 import java.util.Locale;
 
 public class AddChild extends AppCompatActivity {
-    EditText ename, eage;
+    EditText ename, eage, elimit, eallergy;
     Child memo;
     ImageView image;
     Button save, cancel, img_btn,del;
     String URL = Server.ip + "addchild.php";
-    TextView l1, l2;
-    String id, name, Image = "none", age, op_type, child_id = "0";
+    TextView l1, l2,l3,l4;
+    String id, name,limit,allergy="none", Image = "none", age, op_type, child_id = "0";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,8 @@ public class AddChild extends AppCompatActivity {
 
         ename = findViewById(R.id.ch_name);
         eage = findViewById(R.id.ch_age);
+        elimit = findViewById(R.id.ch_limit);
+        eallergy = findViewById(R.id.ch_allergies);
 
         img_btn = findViewById(R.id.fm_image_btn);
         image = findViewById(R.id.fm_image);
@@ -70,11 +72,15 @@ public class AddChild extends AppCompatActivity {
         l1 = findViewById(R.id.l1);
 
         l2= findViewById(R.id.l2);
+        l3= findViewById(R.id.l3);
+        l4= findViewById(R.id.l4);
 
         if (op_type.equals("edit")) {
             memo = (Child) getIntent().getSerializableExtra("info");
             ename.setText(memo.getName());
             eage.setText(memo.getAge());
+            eallergy.setText(memo.getAllergies());
+            elimit.setText(memo.getBuy_limit());
             child_id = memo.getId();
             del.setVisibility(View.VISIBLE);
             getImage(memo.getImage(), image);
@@ -99,6 +105,8 @@ public class AddChild extends AppCompatActivity {
                         op_type = "del";
                         name="";
                         age="";
+                        allergy="";
+                        limit="";
                         SendInfo();
                     }
                 });
@@ -187,9 +195,13 @@ public class AddChild extends AppCompatActivity {
 
         name = ename.getText().toString().trim();
         age = eage.getText().toString().trim();
+        limit = eage.getText().toString().trim();
+        allergy = eage.getText().toString().trim();
 
         l1.setTextColor(Color.BLACK);
         l2.setTextColor(Color.BLACK);
+        l3.setTextColor(Color.BLACK);
+        l4.setTextColor(Color.BLACK);
 
         boolean err = false;
         if (name.length() < 2) {
@@ -198,6 +210,9 @@ public class AddChild extends AppCompatActivity {
         }
         if (age.length() < 1) {
             l2.setTextColor(Color.RED);
+            err = true;
+        }if (limit.length() < 1) {
+            l3.setTextColor(Color.RED);
             err = true;
         }
 
@@ -227,6 +242,8 @@ public class AddChild extends AppCompatActivity {
                 data.put("user_id", id);
                 data.put("name", name);
                 data.put("age", age);
+                data.put("limit", limit);
+                data.put("allergy", allergy);
                 data.put("op_type", op_type);
                 data.put("child_id", child_id);
                 data.put("image", Image);

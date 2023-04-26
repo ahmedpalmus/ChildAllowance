@@ -100,6 +100,8 @@ public class ChildList extends AppCompatActivity {
                             temp.setId(row.getString("child_id"));
                             temp.setName(row.getString("name"));
                             temp.setAge(row.getString("age"));
+                            temp.setBuy_limit(Integer.parseInt(row.getString("limit")));
+                            temp.setAllergies(row.getString("allergy"));
                             temp.setImage(row.getString("child_image"));
                             memos.add(temp);
 

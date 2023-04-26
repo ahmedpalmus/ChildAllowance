@@ -3,7 +3,24 @@ package com.example.childallowance;
 import java.io.Serializable;
 
 public class Child implements Serializable {
-    private String id,name, age, image;
+    private String id,name, age, image,allergies;
+    int buy_limit;
+
+    public String getAllergies() {
+        return allergies;
+    }
+
+    public void setAllergies(String allergies) {
+        this.allergies = allergies;
+    }
+
+    public int getBuy_limit() {
+        return buy_limit;
+    }
+
+    public void setBuy_limit(int buy_limit) {
+        this.buy_limit = buy_limit;
+    }
 
     public String getId() {
         return id;

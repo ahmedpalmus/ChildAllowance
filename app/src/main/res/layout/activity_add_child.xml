@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".AddChild"
     android:orientation="vertical"
+    android:background="@drawable/back"
+android:padding="5dp"
     >
     <LinearLayout
         android:layout_width="match_parent"

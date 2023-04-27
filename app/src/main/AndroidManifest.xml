@@ -13,6 +13,27 @@
         android:theme="@style/Theme.ChildAllowance"
         tools:targetApi="31">
         <activity
+            android:name=".ProductDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddProduct"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ProductList"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AddCanteen"
             android:exported="false">
             <meta-data

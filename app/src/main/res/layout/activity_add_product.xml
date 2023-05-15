@@ -7,18 +7,26 @@
     tools:context=".AddProduct"
     android:orientation="vertical"
     >
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:drawableLeft="@drawable/minilogo"
-        android:textColor="#018191"
-        android:gravity="center"
-        android:padding="5dp"
-        android:background="#fff"
-        android:elevation="5dp"
-        android:fontFamily="@font/agencyb"
-        />
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:textSize="22dp"
+            app:drawableLeftCompat="@drawable/minilogo"
+            android:textColor="#018191"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/agencyb"
+            android:background="@color/white"
+            />
+
+    </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -32,12 +40,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:background="#F1EFEF"
+                android:text="Adding a new Product"
                 android:padding="10dp"
-                android:text="Add a new item"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:fontFamily="@font/times"
-                android:textSize="18sp" />
+                android:textColor="@color/basic"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +63,7 @@
                     android:padding="10dp"
                     android:textStyle="bold"
                     android:textColor="#000"
-                    android:textSize="18sp"
+                    android:textSize="18dp"
                     android:textAlignment="center"
                     />
                 <EditText
@@ -109,7 +118,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:textColor="@color/basic"
+                    android:textColor="#000"
                     android:textSize="18dp"
                     android:text="Select Image"
                     android:textAllCaps="false"
@@ -121,7 +130,7 @@
                 android:id="@+id/add_pimage"
                 android:layout_width="match_parent"
                 android:layout_height="300px"
-                android:src="@drawable/products"
+                android:src="@drawable/menu_item"
                 android:scaleType="fitCenter"
                 />
 
@@ -171,7 +180,7 @@
                     android:text="@string/save"
                     android:textAllCaps="false"
                     android:textColor="#fff"
-                    android:textSize="18sp"
+                    android:textSize="20dp"
                     android:padding="10dp"
                     android:background="@drawable/box_8"
                     android:layout_marginHorizontal="10dp"/>
@@ -198,7 +207,7 @@
                     android:text="@string/cancel"
                     android:textAllCaps="false"
                     android:textColor="#fff"
-                    android:textSize="18sp"
+                    android:textSize="20dp"
                     android:padding="10dp"
                     android:background="@drawable/box_7"/>
 

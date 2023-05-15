@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">ChildAllowance</string>
 
-    <string name="logo">First Aid Hero</string>
+    <string name="logo">Child allownese</string>
     <string name="username">اسم المستخدم</string>
     <string name="password">كلمة المرور</string>
     <string name="login">تسجيل دخول</string>

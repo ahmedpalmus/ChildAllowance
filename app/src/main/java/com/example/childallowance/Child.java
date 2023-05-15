@@ -4,7 +4,15 @@ import java.io.Serializable;
 
 public class Child implements Serializable {
     private String id,name, age, image,allergies;
-    int buy_limit;
+    String buy_limit,canteen;
+
+    public String getCanteen() {
+        return canteen;
+    }
+
+    public void setCanteen(String canteen) {
+        this.canteen = canteen;
+    }
 
     public String getAllergies() {
         return allergies;
@@ -14,11 +22,11 @@ public class Child implements Serializable {
         this.allergies = allergies;
     }
 
-    public int getBuy_limit() {
+    public String getBuy_limit() {
         return buy_limit;
     }
 
-    public void setBuy_limit(int buy_limit) {
+    public void setBuy_limit(String buy_limit) {
         this.buy_limit = buy_limit;
     }
 

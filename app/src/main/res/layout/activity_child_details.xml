@@ -1,9 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChildDetails">
+    tools:context=".ChildDetails"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:textSize="22dp"
+            app:drawableLeftCompat="@drawable/minilogo"
+            android:textColor="#018191"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/agencyb"
+            android:background="@color/white"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/item_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="center"
+                />
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F2F2"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Sara"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/item_p"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:text="5 Years"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Canteen"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/item_cant"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:text="canteen name"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buy Limit"
+                    android:textSize="18dp"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/item_bl"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:text="20 SR"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3F2F2"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:text="Allergies"/>
+            <TextView
+                android:id="@+id/item_al"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:lines="3"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/edit_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Edit"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:background="@drawable/box_1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+

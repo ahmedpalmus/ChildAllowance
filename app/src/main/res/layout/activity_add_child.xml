@@ -229,7 +229,7 @@ android:padding="5dp"
                     android:textStyle="bold"
                     />
                 <Spinner
-                    android:id="@+id/fm_type"
+                    android:id="@+id/fm_canteens"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="3"

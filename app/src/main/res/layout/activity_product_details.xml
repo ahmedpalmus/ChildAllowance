@@ -42,7 +42,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/products"
-                android:text="Java programming"/>
+                android:text="Drinks"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

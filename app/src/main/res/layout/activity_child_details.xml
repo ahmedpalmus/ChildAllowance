@@ -43,6 +43,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:scaleType="center"
+                android:src="@drawable/children"
                 />
             <TextView
                 android:id="@+id/item_name"
@@ -141,11 +142,33 @@
                 android:textColor="#000"
                 android:textSize="18dp"
                 android:lines="3"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                />
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+                <Button
+                    android:id="@+id/purchase"
+                    android:layout_marginHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Child Purchases"
+                    android:fontFamily="@font/masque"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/cash"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:layout_marginVertical="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/gradient_move"
+                    />
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -69,7 +69,6 @@ public class CanteenList extends AppCompatActivity {
                 Connection con = new Connection();
                 HashMap<String, String> data = new HashMap<>();
                 data.put("id", username);
-
                 String result = con.sendPostRequest(URL, data);
                 return result;
             }

@@ -55,14 +55,35 @@
                 android:textAlignment="center"
                 android:drawableLeft="@drawable/children"
                 />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="20dp"
                 android:paddingHorizontal="20dp">
 
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient_move"
+                    android:drawableLeft="@drawable/products"
+                    android:fontFamily="@font/masque"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="20dp"
+                    android:text="products"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,7 +94,8 @@
                     android:id="@+id/profile"
                     android:layout_marginHorizontal="5dp"
                     android:paddingVertical="20dp"
-                    android:paddingHorizontal="5dp"                    android:layout_gravity="center"
+                    android:paddingHorizontal="5dp"
+                    android:layout_gravity="center"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"

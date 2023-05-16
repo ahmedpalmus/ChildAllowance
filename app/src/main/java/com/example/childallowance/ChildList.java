@@ -96,13 +96,6 @@ public class ChildList extends AppCompatActivity {
                             JSONObject row = allReq.getJSONObject(i);
                             Child temp=new Child();
 
-                            System.out.println("child_id"+ row.getString("child_id"));
-                            System.out.println("fullname"+ row.getString("fullname"));
-                            System.out.println("age"+ row.getString("age"));
-                            System.out.println("buy_limit"+row.getString("buy_limit"));
-                            System.out.println("allergies"+ row.getString("allergies"));
-                            System.out.println("image"+ row.getString("image"));
-
                             temp.setId(row.getString("child_id"));
                             temp.setName(row.getString("fullname"));
                             temp.setAge(row.getString("age"));
@@ -111,7 +104,6 @@ public class ChildList extends AppCompatActivity {
                             temp.setImage(row.getString("image"));
                             temp.setCanteen(row.getString("canteen_id"));
                             memos.add(temp);
-
                         }
 
                         String res[] = new String[memos.size()];

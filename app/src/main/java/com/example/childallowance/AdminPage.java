@@ -28,5 +28,23 @@ public class AdminPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(AdminPage.this,Profile.class);
+                intent.putExtra("id",id);
+                startActivity(intent);
+            }
+        });
+        support.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(AdminPage.this,SupportList.class);
+                intent.putExtra("id",id);
+                intent.putExtra("type","admin");
+                startActivity(intent);
+            }
+        });
     }
 }

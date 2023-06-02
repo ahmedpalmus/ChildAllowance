@@ -119,6 +119,7 @@ public class ChildList extends AppCompatActivity {
                                 Intent intent = new Intent(ChildList.this, ChildDetails.class);
                                 intent.putExtra("id",username);
                                 intent.putExtra("child", memos.get(position));
+                                intent.putExtra("type", "parent");
 
                                 startActivity(intent);
                             }

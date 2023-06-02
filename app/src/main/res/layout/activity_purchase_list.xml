@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductList"
+    tools:context=".PurchaseList"
     android:orientation="vertical"
     android:background="@drawable/back"
     android:padding="5dp"
@@ -26,19 +26,18 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/newProd"
         android:layout_margin="10dp"
+        android:id="@+id/new_process"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="5dp"
-        android:text="Adding a new product"
+        android:text="Add New"
         android:background="@drawable/gradient_light"
         android:src="@drawable/add"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:fontFamily="@font/agencyb"
-        android:drawableLeft="@drawable/products"
+        android:drawableLeft="@drawable/cash"
         android:textColor="#2F097C"
         />
     <ListView

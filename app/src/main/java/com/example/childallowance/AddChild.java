@@ -57,7 +57,7 @@ public class AddChild extends AppCompatActivity {
 
     TextView l1, l2,l3,l4;
     String id, name,limit,allergy="none", Image = "none", age,canteen_id="", op_type, child_id = "0";
-Spinner canteens;
+    Spinner canteens;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

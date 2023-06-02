@@ -42,7 +42,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold"
                 android:drawableLeft="@drawable/products"
-                android:text="Drinks"/>
+                android:text="title"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                     android:padding="10dp"
                     android:textColor="#000"
                     android:textSize="18dp"
-                    android:text="50 SR"/>
+                    android:text="10"/>
                 <TextView
                     android:layout_width="0dp"
                     android:layout_weight="1"
@@ -91,7 +91,7 @@
                     android:padding="10dp"
                     android:id="@+id/item_i"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/products"
                     />
                 <TextView
@@ -121,16 +121,26 @@
                         android:textAllCaps="false"
                         android:drawableLeft="@drawable/products"
                         />
-
+                    <Button
+                        android:id="@+id/select_product"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select Product"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        android:background="@drawable/box_1"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        />
                 </LinearLayout>
 
             </LinearLayout>
 
-
         </LinearLayout>
 
     </ScrollView>
-
 
 </LinearLayout>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParentPage"
+    tools:context=".CanteenPage"
     android:orientation="vertical"
     android:background="@drawable/back"
     android:padding="5dp"
@@ -54,7 +54,7 @@
                 android:paddingHorizontal="20dp">
 
                 <Button
-                    android:id="@+id/search"
+                    android:id="@+id/products"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"

@@ -83,6 +83,7 @@ public class ProductList extends AppCompatActivity {
                 HashMap<String, String> data = new HashMap<>();
                 data.put("username", username);
                 data.put("type", type);
+                data.put("child", child);
 
                 String result = con.sendPostRequest(URL, data);
                 return result;

@@ -83,7 +83,6 @@ android:gravity="top"
         android:orientation="horizontal"
         android:gravity="center"
         android:id="@+id/linear17"
-        android:visibility="gone"
         android:paddingVertical="10dp">
 
         <Button

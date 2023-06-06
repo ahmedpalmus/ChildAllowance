@@ -45,7 +45,6 @@ double amount,rem;
         child=getIntent().getStringExtra("child");
         type=getIntent().getStringExtra("type");
         amount= Double.parseDouble(getIntent().getStringExtra("amount"));
-
         add=findViewById(R.id.new_member);
 
         simpleList = findViewById(R.id.prod_list);
@@ -96,6 +95,7 @@ double amount,rem;
 
             @Override
             protected void onPostExecute(String result) {
+
                 loadingDialog.dismiss();
                 records.clear();
                 String res1[] = new String[0];
@@ -106,7 +106,7 @@ double amount,rem;
                 if (result.isEmpty() || result.equals("Error"))
                     Toast.makeText(getApplicationContext(), "Check connection", Toast.LENGTH_LONG).show();
                 else if (result.equals("failure")) {
-                    Toast.makeText(getApplicationContext(), "try again", Toast.LENGTH_LONG).show();
+                    rem=amount;
                 } else {
                     try {
                         records = new ArrayList<>();
@@ -130,7 +130,6 @@ double amount,rem;
                         }
 
                         String res[] = new String[records.size()];
-                        rem=amount;
                         for (int j = 0; j < records.size(); j++) {
                             res[j] =records.get(j).getFullname()+"\n"+records.get(j).getItem_title()+"     Price: "+records.get(j).getPrice()+" SR\n"
                                     +"Date: "+records.get(j).getAdd_date();
